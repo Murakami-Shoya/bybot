@@ -1,0 +1,10 @@
+dict2obj
+Flask
+numpy
+pandas
+matplotlib
+omitempty
+python-dateutil
+requests
+SQLAlchemy
+pybit

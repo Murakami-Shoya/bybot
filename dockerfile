@@ -11,9 +11,11 @@ ENV LC_ALL ja_JP.UTF-8
 ENV TZ JST-9
 ENV TERM xterm
 
-COPY requirements.txt /root/
+RUN mkdir -p /root/opt
+COPY requirements.txt /root/opt
+WORKDIR /root/opt
 
 RUN apt-get install -y vim less
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
-RUN pip install -r /root/requirements.txt
+RUN pip install -r requirements.txt
