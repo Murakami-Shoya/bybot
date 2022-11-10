@@ -4,7 +4,7 @@ services:
     restart: always
     build: .
     container_name: "bybit-py3"
-    working_dir: /root/
+    working_dir: /root/opt
     tty: true
     volumes:
       - ./opt:/root/opt
